@@ -59,10 +59,10 @@ for i, entry in enumerate(selected_entries):
     # Line plot of the principal eigenvector
     ax2 = plt.subplot(8, 4, 2*i + 2)
     ax2.plot(principal_eigenvector, color='royalblue', marker='o', linestyle='-')
-    ax2.set_title(f'Principal Eigenvector - Dataset {i+1}')
+    ax2.set_title(f'Principal Eigenvector - V4E')
     ax2.set_xlabel('Component Index')
     ax2.set_ylabel('Eigenvector Value')
 
 plt.tight_layout()
-plt.savefig('../eigenvalue+vectors.png')
+plt.savefig('../plots/eigenvalue+vectors_v4e.png')
 #plt.show()
